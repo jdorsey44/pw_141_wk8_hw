@@ -1,0 +1,33 @@
+Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+
+export function evenOrOdd(num: number): string {
+  if (num % 2 === 0) {
+      return "Even";
+  } else {
+      return "Odd";
+  }
+}
+
+
+console.log(evenOrOdd(5));  // Output: "Odd"
+console.log(evenOrOdd(8));  // Output: "Even"
+
+
+
+
+The cockroach is one of the fastest insects. Write a function which takes its speed in km per hour and returns it in cm per second, rounded down to the integer (= floored).
+
+For example:
+
+1.08 --> 30
+Note! The input is a Real number (actual type is language dependent) and is >= 0. The result should be an Integer.
+
+
+export function cockroachSpeed(kmPerHour: number): number {
+  const cmPerSecond = Math.floor(kmPerHour * 100000 / 3600);
+  return cmPerSecond;
+}
+
+
+console.log(cockroachSpeed(1.08)); // Output: 30
